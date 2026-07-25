@@ -16,19 +16,18 @@ remain releasable").
 Pin every runtime and tool to an exact version, enforced via committed version files
 and lockfiles:
 
-| Area              | Version                      | Pinning mechanism                         |
-| ----------------- | ---------------------------- | ----------------------------------------- |
-| JVM               | Java 21 LTS                  | Gradle toolchain + container base digest  |
-| Kotlin            | 2.4.10                       | Gradle version catalog                    |
-| Backend framework | Spring Boot 3.5.16           | Gradle plugin/BOM                         |
-| Build             | Gradle Wrapper               | Committed wrapper + checksum verification |
-| Identity          | Keycloak 26.7.x              | Exact patch + image digest                |
-| Mobile            | Flutter 3.44.6 / Dart 3.12.2 | FVM pin + committed config                |
-| Web runtime       | Node.js 24 LTS               | `.node-version`                           |
-| Web framework     | Next.js 16.2.11 (Active LTS) | Exact package version + lockfile          |
-| Package manager   | pnpm 10.x                    | `packageManager` field, exact version     |
-| Infrastructure    | Terraform 1.15.8             | Version constraint + lockfile             |
-| Database          | PostgreSQL 17 + PostGIS      | Matched across local/CI/staging/Azure     |
+| Area              | Version                                           | Pinning mechanism                        |
+| ----------------- | ------------------------------------------------- | ---------------------------------------- | --- | ----- | -------------- | ----------------------------------------- |
+| JVM               | Java 21 LTS                                       | Gradle toolchain + container base digest |
+| Kotlin            | 2.4.10                                            | Gradle version catalog                   |
+| Backend framework | ~~Spring Boot 3.5.16~~ → **4.1.0** (see ADR-0003) | Gradle plugin/BOM                        |     | Build | Gradle Wrapper | Committed wrapper + checksum verification |
+| Identity          | Keycloak 26.7.x                                   | Exact patch + image digest               |
+| Mobile            | Flutter 3.44.6 / Dart 3.12.2                      | FVM pin + committed config               |
+| Web runtime       | Node.js 24 LTS                                    | `.node-version`                          |
+| Web framework     | Next.js 16.2.11 (Active LTS)                      | Exact package version + lockfile         |
+| Package manager   | pnpm 10.x                                         | `packageManager` field, exact version    |
+| Infrastructure    | Terraform 1.15.8                                  | Version constraint + lockfile            |
+| Database          | PostgreSQL 17 + PostGIS                           | Matched across local/CI/staging/Azure    |
 
 No container image may use a floating tag such as `latest`. Upgrades to major
 framework versions (e.g. Spring Boot major line) require a new ADR, not an ad-hoc bump.
