@@ -1,0 +1,115 @@
+name: wasla-local
+
+services:
+  postgres:
+    image: postgis/postgis:17-3.5
+    container_name: wasla-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: wasla
+      POSTGRES_PASSWORD: wasla_local_only
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./init/postgres:/docker-entrypoint-initdb.d
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U wasla"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redis:
+    image: redis:7.4-alpine
+    container_name: wasla-redis
+    restart: unless-stopped
+    ports:
+      - "6379:6379"
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+
+  redpanda:
+    image: redpandadata/redpanda:v24.3.5
+    container_name: wasla-redpanda
+    restart: unless-stopped
+    command:
+      - redpanda
+      - start
+      - --smp=1
+      - --memory=512M
+      - --overprovisioned
+      - --node-id=0
+      - --check=false
+      - --kafka-addr=PLAINTEXT://0.0.0.0:9092
+      - --advertise-kafka-addr=PLAINTEXT://localhost:9092
+    ports:
+      - "9092:9092"
+      - "9644:9644"
+    healthcheck:
+      test: ["CMD", "rpk", "cluster", "health"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  azurite:
+    image: mcr.microsoft.com/azure-storage/azurite:3.34.0
+    container_name: wasla-azurite
+    restart: unless-stopped
+    command: "azurite --blobHost 0.0.0.0 --queueHost 0.0.0.0 --location /data --loose"
+    ports:
+      - "10000:10000"
+      - "10001:10001"
+    volumes:
+      - azurite_data:/data
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:26.7.0
+    container_name: wasla-keycloak
+    restart: unless-stopped
+    command: start-dev
+    environment:
+      KC_DB: postgres
+      KC_DB_URL: jdbc:postgresql://postgres:5432/wasla_keycloak
+      KC_DB_USERNAME: wasla
+      KC_DB_PASSWORD: wasla_local_only
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin_local_only
+      KC_HOSTNAME_STRICT: "false"
+      KC_HTTP_ENABLED: "true"
+    ports:
+      - "8081:8080"
+    depends_on:
+      postgres:
+        condition: service_healthy
+
+  clamav:
+    image: clamav/clamav:1.4
+    container_name: wasla-clamav
+    restart: unless-stopped
+    ports:
+      - "3310:3310"
+
+  mailhog:
+    image: mailhog/mailhog:v1.0.1
+    container_name: wasla-mailhog
+    restart: unless-stopped
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+
+  observability:
+    image: grafana/otel-lgtm:0.11.4
+    container_name: wasla-observability
+    restart: unless-stopped
+    ports:
+      - "3000:3000" # Grafana UI
+      - "4317:4317" # OTLP gRPC
+      - "4318:4318" # OTLP HTTP
+
+volumes:
+  postgres_data:
+  azurite_data:
