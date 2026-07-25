@@ -1,0 +1,30 @@
+build:
+  maxIssues: 0
+
+style:
+  MagicNumber:
+    active: false
+  ReturnCount:
+    active: true
+    max: 4
+
+complexity:
+  LongMethod:
+    active: true
+    threshold: 60
+  LongParameterList:
+    active: true
+    functionThreshold: 6
+    constructorThreshold: 8
+
+naming:
+  active: true
+
+exceptions:
+  TooGenericExceptionCaught:
+    active: true
+  SwallowedException:
+    active: true
+
+potential-bugs:
+  active: true
