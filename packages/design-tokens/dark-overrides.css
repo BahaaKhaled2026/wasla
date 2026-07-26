@@ -18,4 +18,9 @@
   --border-subtle: #2a2a2f;
   --border-default: #3a3a40;
   --border-strong: #5a5a62;
+
+  --status-success-surface: #0f3324;
+  --status-warning-surface: #3a2a0c;
+  --status-danger-surface: #3a1414;
+  --status-info-surface: #10233f;
 }

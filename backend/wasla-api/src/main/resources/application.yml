@@ -7,6 +7,7 @@ spring:
       - org.springframework.boot.data.jdbc.autoconfigure.DataJdbcRepositoriesAutoConfiguration
 
 wasla:
+  build-revision: "${WASLA_BUILD_REVISION:local-dev}"
   datasource:
     control:
       jdbc-url: "jdbc:postgresql://${POSTGRES_HOST:localhost}:${POSTGRES_PORT:5432}/${POSTGRES_CONTROL_DB:wasla_control}"
