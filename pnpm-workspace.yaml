@@ -1,0 +1,8 @@
+packages:
+  - "packages/*"
+  - "admin_web"
+  - "control_plane_web"
+
+ignoredBuiltDependencies:
+  - sharp
+  - unrs-resolver

@@ -1,0 +1,13 @@
+{
+  "status": {
+    "title": "Admin Console — Status",
+    "healthy": "All systems healthy",
+    "unhealthy": "Service unavailable",
+    "requestId": "Request ID",
+    "checkedAt": "Checked at"
+  },
+  "theme": {
+    "light": "Light",
+    "dark": "Dark"
+  }
+}
