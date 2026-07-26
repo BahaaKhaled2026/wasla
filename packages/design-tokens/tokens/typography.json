@@ -1,0 +1,25 @@
+{
+  "typography": {
+    "font-family-ar": {
+      "value": "Cairo, system-ui, sans-serif",
+      "type": "fontFamily"
+    },
+    "font-family-en": {
+      "value": "Inter, system-ui, sans-serif",
+      "type": "fontFamily"
+    },
+    "size-xs": { "value": "12px", "type": "dimension" },
+    "size-sm": { "value": "14px", "type": "dimension" },
+    "size-md": { "value": "16px", "type": "dimension" },
+    "size-lg": { "value": "20px", "type": "dimension" },
+    "size-xl": { "value": "24px", "type": "dimension" },
+    "size-2xl": { "value": "32px", "type": "dimension" },
+    "weight-regular": { "value": "400", "type": "fontWeight" },
+    "weight-medium": { "value": "500", "type": "fontWeight" },
+    "weight-semibold": { "value": "600", "type": "fontWeight" },
+    "weight-bold": { "value": "700", "type": "fontWeight" },
+    "line-height-tight": { "value": "1.2", "type": "number" },
+    "line-height-normal": { "value": "1.5", "type": "number" },
+    "line-height-relaxed": { "value": "1.75", "type": "number" }
+  }
+}

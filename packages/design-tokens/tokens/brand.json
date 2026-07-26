@@ -1,0 +1,9 @@
+{
+  "brand": {
+    "primary": { "value": "#1D5FD6", "type": "color" },
+    "primary-hover": { "value": "#164BAD", "type": "color" },
+    "primary-pressed": { "value": "#103984", "type": "color" },
+    "secondary": { "value": "#0F9D8B", "type": "color" },
+    "accent": { "value": "#F2A93B", "type": "color" }
+  }
+}

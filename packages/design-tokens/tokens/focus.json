@@ -1,0 +1,7 @@
+{
+  "focus": {
+    "ring": { "value": "#1D5FD6", "type": "color" },
+    "ring-offset": { "value": "#FFFFFF", "type": "color" },
+    "ring-width": { "value": "2px", "type": "dimension" }
+  }
+}

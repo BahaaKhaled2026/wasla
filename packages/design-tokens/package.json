@@ -1,0 +1,18 @@
+{
+  "name": "@wasla/design-tokens",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "24.x"
+  },
+  "packageManager": "[email protected]",
+  "scripts": {
+    "build": "style-dictionary build --config config.js",
+    "clean": "rimraf build"
+  },
+  "devDependencies": {
+    "style-dictionary": "5.5.0",
+    "rimraf": "6.0.1"
+  }
+}

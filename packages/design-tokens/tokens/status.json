@@ -1,0 +1,12 @@
+{
+  "status": {
+    "success": { "value": "#1E9E5A", "type": "color" },
+    "success-surface": { "value": "#E7F7EE", "type": "color" },
+    "warning": { "value": "#C77A11", "type": "color" },
+    "warning-surface": { "value": "#FCF1DF", "type": "color" },
+    "danger": { "value": "#D23B3B", "type": "color" },
+    "danger-surface": { "value": "#FBE9E9", "type": "color" },
+    "info": { "value": "#1D5FD6", "type": "color" },
+    "info-surface": { "value": "#E8F0FD", "type": "color" }
+  }
+}

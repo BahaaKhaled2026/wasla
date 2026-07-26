@@ -1,0 +1,10 @@
+{
+  "content": {
+    "primary": { "value": "#111114", "type": "color" },
+    "secondary": { "value": "#4B4B52", "type": "color" },
+    "tertiary": { "value": "#7A7A82", "type": "color" },
+    "inverse": { "value": "#FFFFFF", "type": "color" },
+    "disabled": { "value": "#B7B7BE", "type": "color" },
+    "link": { "value": "#1D5FD6", "type": "color" }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "surface": {
+    "primary": { "value": "#FFFFFF", "type": "color" },
+    "secondary": { "value": "#F7F7F8", "type": "color" },
+    "tertiary": { "value": "#EFEFF1", "type": "color" },
+    "inverse": { "value": "#111114", "type": "color" },
+    "overlay": { "value": "#00000080", "type": "color" }
+  }
+}
