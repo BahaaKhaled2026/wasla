@@ -16,6 +16,7 @@ dependencies {
     implementation(libs.flyway.database.postgresql)
     implementation(libs.kotlin.reflect)
     implementation(libs.jackson.module.kotlin)
+    implementation(libs.uuid.creator)
     runtimeOnly(libs.postgresql)
 
     testImplementation("org.springframework.boot:spring-boot-starter-actuator-test")

@@ -3,6 +3,7 @@ kotlin = "2.3.21"
 spring-boot = "4.1.0"
 spring-dependency-management = "1.1.7"
 java = "21"
+uuid-creator = "6.0.0"
 
 [libraries]
 # Versions below are intentionally unpinned here — they are managed by the
@@ -16,6 +17,7 @@ testcontainers-junit-jupiter = { module = "org.testcontainers:testcontainers-jun
 testcontainers-postgresql = { module = "org.testcontainers:testcontainers-postgresql" }
 testcontainers-kafka = { module = "org.testcontainers:testcontainers-kafka" }
 junit-platform-launcher = { module = "org.junit.platform:junit-platform-launcher" }
+uuid-creator = { module = "com.github.f4b6a3:uuid-creator", version.ref = "uuid-creator" }
 
 [plugins]
 kotlin-jvm = { id = "org.jetbrains.kotlin.jvm", version.ref = "kotlin" }
