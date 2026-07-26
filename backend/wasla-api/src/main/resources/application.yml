@@ -4,6 +4,7 @@ spring:
   autoconfigure:
     exclude:
       - org.springframework.boot.flyway.autoconfigure.FlywayAutoConfiguration
+      - org.springframework.boot.data.jdbc.autoconfigure.DataJdbcRepositoriesAutoConfiguration
 
 wasla:
   datasource:
