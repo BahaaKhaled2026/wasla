@@ -1,0 +1,29 @@
+@import "@wasla/design-tokens/build/css/tokens.css";
+@import "@wasla/design-tokens/dark-overrides.css";
+
+:root {
+  color-scheme: light dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--surface-primary);
+  color: var(--content-primary);
+  font-family: var(--typography-font-family-en);
+}
+
+html[lang="ar"] body {
+  font-family: var(--typography-font-family-ar);
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--spacing-4) var(--spacing-6);
+  border-block-end: 1px solid var(--border-subtle);
+}

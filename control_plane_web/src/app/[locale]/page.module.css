@@ -1,0 +1,50 @@
+.container {
+  padding: var(--spacing-8);
+}
+
+.title {
+  font-size: var(--typography-size-2xl);
+  font-weight: var(--typography-weight-semibold);
+  margin-block-end: var(--spacing-6);
+}
+
+.cardHealthy {
+  background: var(--status-success-surface);
+  border: 1px solid var(--status-success);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+}
+
+.cardUnhealthy {
+  background: var(--status-danger-surface);
+  border: 1px solid var(--status-danger);
+  border-radius: var(--radius-lg);
+  padding: var(--spacing-6);
+}
+
+.statusLine {
+  font-size: var(--typography-size-lg);
+  font-weight: var(--typography-weight-medium);
+  margin: 0 0 var(--spacing-4) 0;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--spacing-2) var(--spacing-4);
+  margin: 0;
+}
+
+.details dt {
+  color: var(--content-secondary);
+}
+
+.details dd {
+  margin: 0;
+  font-family: monospace;
+}
+
+.componentList {
+  margin-block-start: var(--spacing-4);
+  padding-inline-start: var(--spacing-5);
+}
