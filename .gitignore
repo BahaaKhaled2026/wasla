@@ -28,7 +28,9 @@ node_modules/
 .env.*.local
 
 # IDE
+# IDE
 .idea/
+*.iml
 .vscode/*
 !.vscode/extensions.json
 
