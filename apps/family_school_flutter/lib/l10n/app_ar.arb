@@ -1,0 +1,11 @@
+{
+  "@@locale": "ar",
+  "appTitle": "الأسرة والمدرسة — الحالة",
+  "statusHealthy": "جميع الأنظمة تعمل بشكل سليم",
+  "statusUnhealthy": "الخدمة غير متاحة",
+  "requestIdLabel": "معرّف الطلب",
+  "checkedAtLabel": "تم الفحص في",
+  "buildLabel": "الإصدار",
+  "themeLight": "فاتح",
+  "themeDark": "داكن"
+}

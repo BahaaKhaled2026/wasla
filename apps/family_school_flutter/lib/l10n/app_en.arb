@@ -1,0 +1,11 @@
+{
+  "@@locale": "en",
+  "appTitle": "Family & School — Status",
+  "statusHealthy": "All systems healthy",
+  "statusUnhealthy": "Service unavailable",
+  "requestIdLabel": "Request ID",
+  "checkedAtLabel": "Checked at",
+  "buildLabel": "Build",
+  "themeLight": "Light",
+  "themeDark": "Dark"
+}

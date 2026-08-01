@@ -29,7 +29,7 @@ export default {
     },
     dart: {
       transformGroup: "js",
-      buildPath: "build/dart/",
+      buildPath: "../wasla_design_system/lib/src/generated/",
       files: [
         {
           destination: "wasla_tokens.dart",

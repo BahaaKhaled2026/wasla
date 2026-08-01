@@ -1,0 +1,82 @@
+// GENERATED FILE - DO NOT EDIT BY HAND.
+// Source: packages/design-tokens/tokens/*.json
+// Regenerate with: npm run build (inside packages/design-tokens)
+import 'package:flutter/widgets.dart';
+
+class WaslaTokens {
+  WaslaTokens._();
+
+  static const Color borderSubtle = Color(0xFFE4E4E8);
+  static const Color borderDefault = Color(0xFFC9C9D1);
+  static const Color borderStrong = Color(0xFF9C9CA6);
+  static const Color borderInverse = Color(0xFF3A3A40);
+  static const Color brandPrimary = Color(0xFF1D5FD6);
+  static const Color brandPrimaryHover = Color(0xFF164BAD);
+  static const Color brandPrimaryPressed = Color(0xFF103984);
+  static const Color brandSecondary = Color(0xFF0F9D8B);
+  static const Color brandAccent = Color(0xFFF2A93B);
+  static const double breakpointSm = 360;
+  static const double breakpointMd = 600;
+  static const double breakpointLg = 1024;
+  static const double breakpointXl = 1440;
+  static const Color contentPrimary = Color(0xFF111114);
+  static const Color contentSecondary = Color(0xFF4B4B52);
+  static const Color contentTertiary = Color(0xFF7A7A82);
+  static const Color contentInverse = Color(0xFFFFFFFF);
+  static const Color contentDisabled = Color(0xFFB7B7BE);
+  static const Color contentLink = Color(0xFF1D5FD6);
+  static const Color focusRing = Color(0xFF1D5FD6);
+  static const Color focusRingOffset = Color(0xFFFFFFFF);
+  static const double focusRingWidth = 2;
+  static const Duration motionDurationFast = Duration(milliseconds: 120);
+  static const Duration motionDurationNormal = Duration(milliseconds: 200);
+  static const Duration motionDurationSlow = Duration(milliseconds: 320);
+  static const String motionEasingStandard = 'cubic-bezier(0.2, 0, 0, 1)';
+  static const String motionEasingDecelerate = 'cubic-bezier(0, 0, 0, 1)';
+  static const String motionEasingAccelerate = 'cubic-bezier(0.3, 0, 1, 1)';
+  static const double radiusNone = 0;
+  static const double radiusSm = 4;
+  static const double radiusMd = 8;
+  static const double radiusLg = 12;
+  static const double radiusXl = 16;
+  static const double radiusFull = 9999;
+  static const double spacing0 = 0;
+  static const double spacing1 = 4;
+  static const double spacing2 = 8;
+  static const double spacing3 = 12;
+  static const double spacing4 = 16;
+  static const double spacing5 = 20;
+  static const double spacing6 = 24;
+  static const double spacing8 = 32;
+  static const double spacing10 = 40;
+  static const double spacing12 = 48;
+  static const double spacing16 = 64;
+  static const Color statusSuccess = Color(0xFF1E9E5A);
+  static const Color statusSuccessSurface = Color(0xFFE7F7EE);
+  static const Color statusWarning = Color(0xFFC77A11);
+  static const Color statusWarningSurface = Color(0xFFFCF1DF);
+  static const Color statusDanger = Color(0xFFD23B3B);
+  static const Color statusDangerSurface = Color(0xFFFBE9E9);
+  static const Color statusInfo = Color(0xFF1D5FD6);
+  static const Color statusInfoSurface = Color(0xFFE8F0FD);
+  static const Color surfacePrimary = Color(0xFFFFFFFF);
+  static const Color surfaceSecondary = Color(0xFFF7F7F8);
+  static const Color surfaceTertiary = Color(0xFFEFEFF1);
+  static const Color surfaceInverse = Color(0xFF111114);
+  static const Color surfaceOverlay = Color(0x80000000);
+  static const String typographyFontFamilyAr = 'Cairo, system-ui, sans-serif';
+  static const String typographyFontFamilyEn = 'Inter, system-ui, sans-serif';
+  static const double typographySizeXs = 12;
+  static const double typographySizeSm = 14;
+  static const double typographySizeMd = 16;
+  static const double typographySizeLg = 20;
+  static const double typographySizeXl = 24;
+  static const double typographySize2xl = 32;
+  static const int typographyWeightRegular = 400;
+  static const int typographyWeightMedium = 500;
+  static const int typographyWeightSemibold = 600;
+  static const int typographyWeightBold = 700;
+  static const double typographyLineHeightTight = 1.2;
+  static const double typographyLineHeightNormal = 1.5;
+  static const double typographyLineHeightRelaxed = 1.75;
+}
