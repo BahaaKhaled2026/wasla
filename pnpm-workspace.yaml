@@ -1,7 +1,7 @@
 packages:
   - "packages/*"
-  - "admin_web"
-  - "control_plane_web"
+  - "apps/admin_web"
+  - "apps/control_plane_web"
 
 ignoredBuiltDependencies:
   - sharp
